@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <script src="https://kit.fontawesome.com/d7d901d004.js" crossorigin="anonymous"></script>
-    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
 </head>
 <body>
     
     <header>
-        <a href="#" class="logo">FuscoFoods</a>
+        <a href="#" class="logo">OsasChops</a>
 
         <div class="bx bx-menu" id="menu-icon">
             <i class="fa-solid fa-bars"></i>
@@ -35,7 +38,7 @@
     </header>
 
     <!--Home Start-->
-    <section class="home" id="home">
+    <section class="home" id="home" data-aos="fade-down" data-aos-duration="1000" >
         <div class="home-text">
             <h1>Full Website</h1>
             <h2>Food The <br> Most Precious Things</h2>
@@ -49,11 +52,11 @@
     
     <!--about Start-->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in" data-aos-duration="1000">
             <img src="img/dana.jpg">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-left" data-aos-duration="1000">
             <span>About Us</span>
             <h2>We speak the good<br> food language</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae impedit molestias fugit porro minus corporis et sapiente ex. Dolore ipsa quae, perferendis placeat </p>
@@ -70,7 +73,7 @@
         </div>
 
         <div class="menu-container">
-            <div class="box">
+            <div class="box" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
                 <div class="box-img">
                     <img src="img/engin.jpg">
                 </div>
@@ -81,7 +84,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="box-img">
                     <img src="img/haaa.jpg">
                 </div>
@@ -92,7 +95,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
 
-            <div class="box">
+            <div class="box"  data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="linear">
                 <div class="box-img">
                     <img src="img/kute.jpg">
                 </div>
@@ -113,19 +116,19 @@
         </div>
 
         <div class="service-container">
-            <div class="s-box">
+            <div class="s-box" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
                 <img src="img/lap.jpg">
                 <h3>Order</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, minus inventore. Quae consectetur quis accusamus tempore.</p>
             </div>
 
-            <div class="s-box">
+            <div class="s-box" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
                 <img src="img/pap.jpg">
                 <h3>Shipping</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, minus inventore. Quae consectetur quis accusamus tempore.</p>
             </div>
 
-            <div class="s-box">
+            <div class="s-box" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
                 <img src="img/pixabay.jpg">
                 <h3>Delivered</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, minus inventore. Quae consectetur quis accusamus tempore.</p>
@@ -134,7 +137,7 @@
     </section>
 
     <!-- call to action-->
-    <section class="cta">
+    <section class="cta" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1000">
         <h2>We make quality food <br> </h2>
         <a href="#" class="btn">Let's talk</a>
     </section>
@@ -193,8 +196,14 @@
         </div>
     </section>
 
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
     <!--Javascript-->
     <script type="text/javascript" src="Food.js"></script>
-
+    
 </body>
 </html>
